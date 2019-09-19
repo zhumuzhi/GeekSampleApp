@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Controller-->
+        <scene sceneID="b8g-Ru-wn1">
+            <objects>
+                <viewController restorationIdentifier="TestController" storyboardIdentifier="TestController" id="qmi-Rl-MSB" customClass="TestController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyv-S7-6fq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FaA-eo-EbK">
+                                <rect key="frame" x="10" y="164" width="394" height="424.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRA-DG-CPK">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDK-Ta-k94">
+                                        <rect key="frame" x="0.0" y="28.5" width="129" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGS-Xp-gHM">
+                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
+                                        <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="qmi-Rl-MSB" eventType="touchUpInside" id="a00-YX-TAa"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lPh-Bb-KFd">
+                                        <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lPh-Bb-KFd" secondAttribute="height" multiplier="1:1" id="U0R-dj-ZaX"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="q46-iz-peS" appends="YES" id="BAx-Qa-OH3"/>
+                                            <outletCollection property="gestureRecognizers" destination="q46-iz-peS" appends="YES" id="jMN-Kk-ZSM"/>
+                                            <outletCollection property="gestureRecognizers" destination="q46-iz-peS" appends="YES" id="zRn-nt-yWG"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FaA-eo-EbK" firstAttribute="top" secondItem="Rvg-A7-sIm" secondAttribute="top" constant="120" id="Jy3-66-dh7"/>
+                            <constraint firstItem="Rvg-A7-sIm" firstAttribute="trailing" secondItem="FaA-eo-EbK" secondAttribute="trailing" constant="10" id="tjj-ZT-uYz"/>
+                            <constraint firstItem="FaA-eo-EbK" firstAttribute="leading" secondItem="Rvg-A7-sIm" secondAttribute="leading" constant="10" id="uco-xf-Tu0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rvg-A7-sIm"/>
+                    </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="TRA-DG-CPK" id="IG1-wa-Ryn"/>
+                        <outlet property="nameTextField" destination="aDK-Ta-k94" id="MyB-cs-kaU"/>
+                        <outlet property="photoImageView" destination="lPh-Bb-KFd" id="PI3-7a-xer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a00-oS-5fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="q46-iz-peS" userLabel="PhotoImage Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="qmi-Rl-MSB" id="PLQ-gC-6VI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1767" y="-721"/>
+        </scene>
+    </scenes>
+</document>

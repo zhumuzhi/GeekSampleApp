@@ -9,6 +9,8 @@
 #import "CGNewsViewController.h"
 #import "GTNormalTableViewCell.h"
 
+#import "TestController.h"
+
 @interface CGNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -55,12 +57,19 @@
         cell = [[GTNormalTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identify];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-//    cell.textLabel.text = [NSString stringWithFormat:@"%zd-%zd", indexPath.section, indexPath.row];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"testStoryboard" bundle:nil];
+    TestController *testVC = [storyboard instantiateViewControllerWithIdentifier:@"TestController"];
+    [self.navigationController pushViewController:testVC animated:YES];
+    
 }
 
 
