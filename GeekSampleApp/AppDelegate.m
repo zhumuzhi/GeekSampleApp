@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -17,7 +17,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self setRootController];
+    
     return YES;
+}
+
+
+- (void)setRootController {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UITabBarController *tabbarController = [[UITabBarController alloc] init];
+    
+    UIViewController *controller1 = [[UIViewController alloc] init];
+    controller1.view.backgroundColor = [UIColor lightGrayColor];
+    controller1.navigationItem.title = @"新闻";
+    controller1.tabBarItem.title = @"新闻";
+    controller1.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+    controller1.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    
+    UIViewController *controller2 = [[UIViewController alloc] init];
+    controller2.view.backgroundColor = [UIColor yellowColor];
+    controller1.navigationItem.title = @"视频";
+    controller2.tabBarItem.title = @"视频";
+    controller2.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
+    controller1.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/video_selected@2x.png"];
+    
+    UIViewController *controller3 = [[UIViewController alloc] init];
+    controller3.view.backgroundColor = [UIColor greenColor];
+    controller1.navigationItem.title = @"推荐";
+    controller3.tabBarItem.title = @"推荐";
+    controller3.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
+    controller3.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
+    
+    UIViewController *controller4 = [[UIViewController alloc] init];
+    controller4.view.backgroundColor = [UIColor blueColor];
+    controller1.navigationItem.title = @"我的";
+    controller4.tabBarItem.title = @"我的";
+    controller4.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
+    
+    [tabbarController setViewControllers:@[controller1, controller2, controller3, controller4]];
+    tabbarController.delegate = self;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
+    
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
+}
+
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    NSLog(@"did select");
 }
 
 
