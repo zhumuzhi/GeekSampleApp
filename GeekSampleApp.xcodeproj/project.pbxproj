@@ -14,6 +14,9 @@
 		5DF8515023330D8E00C76C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514E23330D8E00C76C4D /* LaunchScreen.storyboard */; };
 		5DF8515323330D8E00C76C4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8515223330D8E00C76C4D /* main.m */; };
 		5DF8515C233317D900C76C4D /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8515B233317D900C76C4D /* icon.bundle */; };
+		5DF8516223331E8500C76C4D /* CGNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8516123331E8500C76C4D /* CGNewsViewController.m */; };
+		5DF8516523331ED900C76C4D /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8516423331ED900C76C4D /* GTNormalTableViewCell.m */; };
+		5DF8516923331F9100C76C4D /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8516823331F9100C76C4D /* GTScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		5DF8515123330D8E00C76C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DF8515223330D8E00C76C4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DF8515B233317D900C76C4D /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		5DF8516023331E8500C76C4D /* CGNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGNewsViewController.h; sourceTree = "<group>"; };
+		5DF8516123331E8500C76C4D /* CGNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGNewsViewController.m; sourceTree = "<group>"; };
+		5DF8516323331ED900C76C4D /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
+		5DF8516423331ED900C76C4D /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
+		5DF8516723331F9100C76C4D /* GTScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTScreen.h; sourceTree = "<group>"; };
+		5DF8516823331F9100C76C4D /* GTScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 		5DF8514223330D8C00C76C4D /* GeekSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				5DF8516623331F5C00C76C4D /* Utils */,
+				5DF8515D23331E3500C76C4D /* NewsController */,
 				5DF8514323330D8C00C76C4D /* AppDelegate.h */,
 				5DF8514423330D8C00C76C4D /* AppDelegate.m */,
 				5DF8514623330D8C00C76C4D /* ViewController.h */,
@@ -72,6 +83,42 @@
 				5DF8515B233317D900C76C4D /* icon.bundle */,
 			);
 			path = GeekSampleApp;
+			sourceTree = "<group>";
+		};
+		5DF8515D23331E3500C76C4D /* NewsController */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8515F23331E5100C76C4D /* Controller */,
+				5DF8515E23331E4F00C76C4D /* View */,
+			);
+			path = NewsController;
+			sourceTree = "<group>";
+		};
+		5DF8515E23331E4F00C76C4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8516323331ED900C76C4D /* GTNormalTableViewCell.h */,
+				5DF8516423331ED900C76C4D /* GTNormalTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DF8515F23331E5100C76C4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8516023331E8500C76C4D /* CGNewsViewController.h */,
+				5DF8516123331E8500C76C4D /* CGNewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DF8516623331F5C00C76C4D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8516723331F9100C76C4D /* GTScreen.h */,
+				5DF8516823331F9100C76C4D /* GTScreen.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF8516923331F9100C76C4D /* GTScreen.m in Sources */,
 				5DF8514823330D8C00C76C4D /* ViewController.m in Sources */,
 				5DF8515323330D8E00C76C4D /* main.m in Sources */,
 				5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */,
+				5DF8516223331E8500C76C4D /* CGNewsViewController.m in Sources */,
+				5DF8516523331ED900C76C4D /* GTNormalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
