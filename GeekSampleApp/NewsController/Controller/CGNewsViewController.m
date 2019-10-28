@@ -11,6 +11,8 @@
 
 #import "TestController.h"
 
+#import "GDPerformanceMonitor.h"
+
 @interface CGNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -42,6 +44,13 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
+    
+    [[GDPerformanceMonitor sharedInstance] startMonitoring];
+    [[GDPerformanceMonitor sharedInstance] configureWithConfiguration:^(UILabel *textLabel) {
+        [textLabel setBackgroundColor:[UIColor blackColor]];
+        [textLabel setTextColor:[UIColor whiteColor]];
+        [textLabel.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    }];
     
 }
 

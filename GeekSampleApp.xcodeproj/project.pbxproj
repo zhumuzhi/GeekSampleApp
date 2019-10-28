@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD924234F13BE00377779 /* GDPerformanceView.m */; };
+		3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */; };
+		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
+		3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD927234F13BE00377779 /* GDWindowViewController.m */; };
 		5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514423330D8C00C76C4D /* AppDelegate.m */; };
 		5DF8514823330D8C00C76C4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514723330D8C00C76C4D /* ViewController.m */; };
 		5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514C23330D8E00C76C4D /* Assets.xcassets */; };
@@ -22,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E4BD91F234F13BE00377779 /* GDPerformanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceView.h; sourceTree = "<group>"; };
+		3E4BD920234F13BE00377779 /* GDMarginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMarginLabel.h; sourceTree = "<group>"; };
+		3E4BD921234F13BE00377779 /* GDPerformanceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceMonitor.h; sourceTree = "<group>"; };
+		3E4BD922234F13BE00377779 /* GDWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWindowViewController.h; sourceTree = "<group>"; };
+		3E4BD923234F13BE00377779 /* GDPerformanceMonitorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceMonitorProtocol.h; sourceTree = "<group>"; };
+		3E4BD924234F13BE00377779 /* GDPerformanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceView.m; sourceTree = "<group>"; };
+		3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceMonitor.m; sourceTree = "<group>"; };
+		3E4BD926234F13BE00377779 /* GDMarginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMarginLabel.m; sourceTree = "<group>"; };
+		3E4BD927234F13BE00377779 /* GDWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWindowViewController.m; sourceTree = "<group>"; };
 		5DF8514023330D8C00C76C4D /* GeekSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF8514323330D8C00C76C4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DF8514423330D8C00C76C4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4BD91E234F13BE00377779 /* GDPerformanceMonitoring */ = {
+			isa = PBXGroup;
+			children = (
+				3E4BD91F234F13BE00377779 /* GDPerformanceView.h */,
+				3E4BD920234F13BE00377779 /* GDMarginLabel.h */,
+				3E4BD921234F13BE00377779 /* GDPerformanceMonitor.h */,
+				3E4BD922234F13BE00377779 /* GDWindowViewController.h */,
+				3E4BD923234F13BE00377779 /* GDPerformanceMonitorProtocol.h */,
+				3E4BD924234F13BE00377779 /* GDPerformanceView.m */,
+				3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */,
+				3E4BD926234F13BE00377779 /* GDMarginLabel.m */,
+				3E4BD927234F13BE00377779 /* GDWindowViewController.m */,
+			);
+			path = GDPerformanceMonitoring;
+			sourceTree = "<group>";
+		};
 		5DF8513723330D8C00C76C4D = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +150,7 @@
 		5DF8516623331F5C00C76C4D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3E4BD91E234F13BE00377779 /* GDPerformanceMonitoring */,
 				5DF8516723331F9100C76C4D /* GTScreen.h */,
 				5DF8516823331F9100C76C4D /* GTScreen.m */,
 			);
@@ -227,10 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF85175233368CF00C76C4D /* Meal.m in Sources */,
+				3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */,
 				5DF8516923331F9100C76C4D /* GTScreen.m in Sources */,
+				3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */,
+				3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */,
 				5DF8516E23335CBE00C76C4D /* TestController.m in Sources */,
 				5DF8514823330D8C00C76C4D /* ViewController.m in Sources */,
 				5DF8515323330D8E00C76C4D /* main.m in Sources */,
+				3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */,
 				5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */,
 				5DF8516223331E8500C76C4D /* CGNewsViewController.m in Sources */,
 				5DF8516523331ED900C76C4D /* GTNormalTableViewCell.m in Sources */,
