@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1B1DB523672F4100FA5427 /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */; };
 		3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD924234F13BE00377779 /* GDPerformanceView.m */; };
 		3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */; };
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E1B1DB323672F4100FA5427 /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
+		3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		3E4BD91F234F13BE00377779 /* GDPerformanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceView.h; sourceTree = "<group>"; };
 		3E4BD920234F13BE00377779 /* GDMarginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMarginLabel.h; sourceTree = "<group>"; };
 		3E4BD921234F13BE00377779 /* GDPerformanceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceMonitor.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 			children = (
 				5DF8516023331E8500C76C4D /* CGNewsViewController.h */,
 				5DF8516123331E8500C76C4D /* CGNewsViewController.m */,
+				3E1B1DB323672F4100FA5427 /* GTDetailViewController.h */,
+				3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */,
 				5DF8516223331E8500C76C4D /* CGNewsViewController.m in Sources */,
 				5DF8516523331ED900C76C4D /* GTNormalTableViewCell.m in Sources */,
+				3E1B1DB523672F4100FA5427 /* GTDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

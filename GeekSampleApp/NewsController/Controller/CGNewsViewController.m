@@ -12,6 +12,8 @@
 #import "TestController.h"
 
 #import "GDPerformanceMonitor.h"
+#import "GTDetailViewController.h"
+
 
 @interface CGNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -75,9 +77,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"testStoryboard" bundle:nil];
-    TestController *testVC = [storyboard instantiateViewControllerWithIdentifier:@"TestController"];
-    [self.navigationController pushViewController:testVC animated:YES];
+    GTDetailViewController *newsDetail = [[GTDetailViewController alloc] init];
+    newsDetail.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:newsDetail animated:YES];
+    
+
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"testStoryboard" bundle:nil];
+//    TestController *testVC = [storyboard instantiateViewControllerWithIdentifier:@"TestController"];
+//    [self.navigationController pushViewController:testVC animated:YES];
     
 }
 
