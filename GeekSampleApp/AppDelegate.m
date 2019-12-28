@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "CGNewsViewController.h"
+#import "GTSplashView.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -65,6 +66,12 @@
     self.window.rootViewController = tabbarController;
     
     [self.window makeKeyAndVisible];
+    
+    [self.window addSubview:({
+        GTSplashView *splashView = [[GTSplashView alloc] initWithFrame:self.window.bounds];
+        splashView;
+    })];
+    
 }
 
 

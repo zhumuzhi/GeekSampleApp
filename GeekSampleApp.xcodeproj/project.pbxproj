@@ -12,6 +12,8 @@
 		3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */; };
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
 		3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD927234F13BE00377779 /* GDWindowViewController.m */; };
+		3E9A75BA23B7A47600C26C98 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E9A75B923B7A47500C26C98 /* defaultImage.png */; };
+		3E9A75BD23B7A56B00C26C98 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */; };
 		5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514423330D8C00C76C4D /* AppDelegate.m */; };
 		5DF8514823330D8C00C76C4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514723330D8C00C76C4D /* ViewController.m */; };
 		5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514C23330D8E00C76C4D /* Assets.xcassets */; };
@@ -38,6 +40,9 @@
 		3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceMonitor.m; sourceTree = "<group>"; };
 		3E4BD926234F13BE00377779 /* GDMarginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMarginLabel.m; sourceTree = "<group>"; };
 		3E4BD927234F13BE00377779 /* GDWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWindowViewController.m; sourceTree = "<group>"; };
+		3E9A75B923B7A47500C26C98 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
+		3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSplashView.h; sourceTree = "<group>"; };
+		3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSplashView.m; sourceTree = "<group>"; };
 		5DF8514023330D8C00C76C4D /* GeekSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF8514323330D8C00C76C4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DF8514423330D8C00C76C4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,7 +123,10 @@
 				5DF8514E23330D8E00C76C4D /* LaunchScreen.storyboard */,
 				5DF8515123330D8E00C76C4D /* Info.plist */,
 				5DF8515223330D8E00C76C4D /* main.m */,
+				3E9A75B923B7A47500C26C98 /* defaultImage.png */,
 				5DF8515B233317D900C76C4D /* icon.bundle */,
+				3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */,
+				3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */,
 			);
 			path = GeekSampleApp;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 				5DF85171233363BC00C76C4D /* testStoryboard.storyboard in Resources */,
 				5DF8515C233317D900C76C4D /* icon.bundle in Resources */,
 				5DF8515023330D8E00C76C4D /* LaunchScreen.storyboard in Resources */,
+				3E9A75BA23B7A47600C26C98 /* defaultImage.png in Resources */,
 				5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +280,7 @@
 				5DF8515323330D8E00C76C4D /* main.m in Sources */,
 				3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */,
 				5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */,
+				3E9A75BD23B7A56B00C26C98 /* GTSplashView.m in Sources */,
 				5DF8516223331E8500C76C4D /* CGNewsViewController.m in Sources */,
 				5DF8516523331ED900C76C4D /* GTNormalTableViewCell.m in Sources */,
 				3E1B1DB523672F4100FA5427 /* GTDetailViewController.m in Sources */,
