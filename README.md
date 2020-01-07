@@ -1,2 +1,2 @@
 # GeekSampleApp
-练习小项目
+极客时间-iOS项目
