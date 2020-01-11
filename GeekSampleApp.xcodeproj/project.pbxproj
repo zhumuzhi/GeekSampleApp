@@ -38,7 +38,6 @@
 		3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceMonitor.m; sourceTree = "<group>"; };
 		3E4BD926234F13BE00377779 /* GDMarginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMarginLabel.m; sourceTree = "<group>"; };
 		3E4BD927234F13BE00377779 /* GDWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWindowViewController.m; sourceTree = "<group>"; };
-		3E746C3623C9918B007E276D /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
 		3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSplashView.h; sourceTree = "<group>"; };
 		3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSplashView.m; sourceTree = "<group>"; };
 		5DF8514023330D8C00C76C4D /* GeekSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +112,6 @@
 		3E746C2E23C97D9E007E276D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3E746C3623C9918B007E276D /* defaultImage.png */,
 				5DF8515B233317D900C76C4D /* icon.bundle */,
 			);
 			path = Source;
