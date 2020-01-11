@@ -20,7 +20,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.image = [UIImage imageNamed:@"icon.bundle/defaultImage.png"];
+        self.image = [UIImage imageNamed:@"defaultImage.png"];
         [self addSubview:({
             _skipButton = [[UIButton alloc] initWithFrame:CGRectMake(330, 100, 60, 40)];
             _skipButton.backgroundColor = [UIColor lightGrayColor];

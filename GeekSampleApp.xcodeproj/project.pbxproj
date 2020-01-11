@@ -12,10 +12,8 @@
 		3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */; };
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
 		3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD927234F13BE00377779 /* GDWindowViewController.m */; };
-		3E9A75BA23B7A47600C26C98 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E9A75B923B7A47500C26C98 /* defaultImage.png */; };
 		3E9A75BD23B7A56B00C26C98 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */; };
 		5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514423330D8C00C76C4D /* AppDelegate.m */; };
-		5DF8514823330D8C00C76C4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514723330D8C00C76C4D /* ViewController.m */; };
 		5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514C23330D8E00C76C4D /* Assets.xcassets */; };
 		5DF8515023330D8E00C76C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514E23330D8E00C76C4D /* LaunchScreen.storyboard */; };
 		5DF8515323330D8E00C76C4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8515223330D8E00C76C4D /* main.m */; };
@@ -40,14 +38,12 @@
 		3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceMonitor.m; sourceTree = "<group>"; };
 		3E4BD926234F13BE00377779 /* GDMarginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMarginLabel.m; sourceTree = "<group>"; };
 		3E4BD927234F13BE00377779 /* GDWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWindowViewController.m; sourceTree = "<group>"; };
-		3E9A75B923B7A47500C26C98 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
+		3E746C3623C9918B007E276D /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
 		3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSplashView.h; sourceTree = "<group>"; };
 		3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSplashView.m; sourceTree = "<group>"; };
 		5DF8514023330D8C00C76C4D /* GeekSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF8514323330D8C00C76C4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DF8514423330D8C00C76C4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5DF8514623330D8C00C76C4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5DF8514723330D8C00C76C4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5DF8514C23330D8E00C76C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DF8514F23330D8E00C76C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DF8515123330D8E00C76C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +73,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E4BD91E234F13BE00377779 /* GDPerformanceMonitoring */ = {
+		3E4BD91E234F13BE00377779 /* GDPerformanceMonitor */ = {
 			isa = PBXGroup;
 			children = (
 				3E4BD91F234F13BE00377779 /* GDPerformanceView.h */,
@@ -90,7 +86,82 @@
 				3E4BD926234F13BE00377779 /* GDMarginLabel.m */,
 				3E4BD927234F13BE00377779 /* GDWindowViewController.m */,
 			);
-			path = GDPerformanceMonitoring;
+			path = GDPerformanceMonitor;
+			sourceTree = "<group>";
+		};
+		3E746C2C23C97D40007E276D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C2E23C97D9E007E276D /* Source */,
+				5DF8514C23330D8E00C76C4D /* Assets.xcassets */,
+				5DF8514E23330D8E00C76C4D /* LaunchScreen.storyboard */,
+				5DF8515123330D8E00C76C4D /* Info.plist */,
+				5DF8515223330D8E00C76C4D /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3E746C2D23C97D8C007E276D /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8514323330D8C00C76C4D /* AppDelegate.h */,
+				5DF8514423330D8C00C76C4D /* AppDelegate.m */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		3E746C2E23C97D9E007E276D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C3623C9918B007E276D /* defaultImage.png */,
+				5DF8515B233317D900C76C4D /* icon.bundle */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3E746C2F23C98E52007E276D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C3023C98E67007E276D /* component */,
+				5DF8516623331F5C00C76C4D /* Utils */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3E746C3023C98E67007E276D /* component */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C3223C98EDB007E276D /* GTSplashView */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		3E746C3123C98E7F007E276D /* GeekSamleModule */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C2D23C97D8C007E276D /* Appdelegate */,
+				5DF8516A23335C9700C76C4D /* TestController */,
+				5DF8515D23331E3500C76C4D /* NewsController */,
+			);
+			path = GeekSamleModule;
+			sourceTree = "<group>";
+		};
+		3E746C3223C98EDB007E276D /* GTSplashView */ = {
+			isa = PBXGroup;
+			children = (
+				3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */,
+				3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */,
+			);
+			path = GTSplashView;
+			sourceTree = "<group>";
+		};
+		3E746C3323C98EF6007E276D /* GTScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8516723331F9100C76C4D /* GTScreen.h */,
+				5DF8516823331F9100C76C4D /* GTScreen.m */,
+			);
+			path = GTScreen;
 			sourceTree = "<group>";
 		};
 		5DF8513723330D8C00C76C4D = {
@@ -112,21 +183,9 @@
 		5DF8514223330D8C00C76C4D /* GeekSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				5DF8516623331F5C00C76C4D /* Utils */,
-				5DF8516A23335C9700C76C4D /* TestController */,
-				5DF8515D23331E3500C76C4D /* NewsController */,
-				5DF8514323330D8C00C76C4D /* AppDelegate.h */,
-				5DF8514423330D8C00C76C4D /* AppDelegate.m */,
-				5DF8514623330D8C00C76C4D /* ViewController.h */,
-				5DF8514723330D8C00C76C4D /* ViewController.m */,
-				5DF8514C23330D8E00C76C4D /* Assets.xcassets */,
-				5DF8514E23330D8E00C76C4D /* LaunchScreen.storyboard */,
-				5DF8515123330D8E00C76C4D /* Info.plist */,
-				5DF8515223330D8E00C76C4D /* main.m */,
-				3E9A75B923B7A47500C26C98 /* defaultImage.png */,
-				5DF8515B233317D900C76C4D /* icon.bundle */,
-				3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */,
-				3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */,
+				3E746C3123C98E7F007E276D /* GeekSamleModule */,
+				3E746C2F23C98E52007E276D /* Support */,
+				3E746C2C23C97D40007E276D /* Other */,
 			);
 			path = GeekSampleApp;
 			sourceTree = "<group>";
@@ -163,9 +222,8 @@
 		5DF8516623331F5C00C76C4D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3E4BD91E234F13BE00377779 /* GDPerformanceMonitoring */,
-				5DF8516723331F9100C76C4D /* GTScreen.h */,
-				5DF8516823331F9100C76C4D /* GTScreen.m */,
+				3E746C3323C98EF6007E276D /* GTScreen */,
+				3E4BD91E234F13BE00377779 /* GDPerformanceMonitor */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -258,7 +316,6 @@
 				5DF85171233363BC00C76C4D /* testStoryboard.storyboard in Resources */,
 				5DF8515C233317D900C76C4D /* icon.bundle in Resources */,
 				5DF8515023330D8E00C76C4D /* LaunchScreen.storyboard in Resources */,
-				3E9A75BA23B7A47600C26C98 /* defaultImage.png in Resources */,
 				5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +333,6 @@
 				3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */,
 				3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */,
 				5DF8516E23335CBE00C76C4D /* TestController.m in Sources */,
-				5DF8514823330D8C00C76C4D /* ViewController.m in Sources */,
 				5DF8515323330D8E00C76C4D /* main.m in Sources */,
 				3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */,
 				5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */,
@@ -419,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GFW576JD52;
-				INFOPLIST_FILE = GeekSampleApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GeekSampleApp/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GFW576JD52;
-				INFOPLIST_FILE = GeekSampleApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GeekSampleApp/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

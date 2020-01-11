@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 广告启动图
 @interface GTSplashView : UIImageView
 
 @end
