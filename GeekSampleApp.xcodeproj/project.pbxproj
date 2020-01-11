@@ -72,7 +72,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E4BD91E234F13BE00377779 /* GDPerformanceMonitor */ = {
+		3E4BD91E234F13BE00377779 /* GDPerformanceMonitor(状态栏fps) */ = {
 			isa = PBXGroup;
 			children = (
 				3E4BD91F234F13BE00377779 /* GDPerformanceView.h */,
@@ -85,7 +85,7 @@
 				3E4BD926234F13BE00377779 /* GDMarginLabel.m */,
 				3E4BD927234F13BE00377779 /* GDWindowViewController.m */,
 			);
-			path = GDPerformanceMonitor;
+			path = "GDPerformanceMonitor(状态栏fps)";
 			sourceTree = "<group>";
 		};
 		3E746C2C23C97D40007E276D /* Other */ = {
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				3E746C3323C98EF6007E276D /* GTScreen */,
-				3E4BD91E234F13BE00377779 /* GDPerformanceMonitor */,
+				3E4BD91E234F13BE00377779 /* GDPerformanceMonitor(状态栏fps) */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
