@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  新闻控制器
  */
-@interface CGNewsViewController : UIViewController
+@interface GTNewsViewController : UIViewController
 
 
 @end

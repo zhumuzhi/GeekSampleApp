@@ -8,8 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "CGNewsViewController.h"
 #import "GTSplashView.h"
+#import "GTNewsViewController.h"
+#import "GTControlTestController.h"
+
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -33,11 +35,11 @@
     
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
     
-    CGNewsViewController *controller1 = [[CGNewsViewController alloc] init];
+    GTNewsViewController *controller1 = [[GTNewsViewController alloc] init];
     UINavigationController *navigationController1 = [[UINavigationController alloc] initWithRootViewController:controller1];
     
-    UIViewController *controller2 = [[UIViewController alloc] init];
-    controller2.view.backgroundColor = [UIColor yellowColor];
+    GTControlTestController *controller2 = [[GTControlTestController alloc] init];
+    controller2.view.backgroundColor = [UIColor whiteColor];
     controller2.navigationItem.title = @"视频";
     controller2.tabBarItem.title = @"视频";
     controller2.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];

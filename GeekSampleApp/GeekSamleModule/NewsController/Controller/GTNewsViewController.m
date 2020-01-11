@@ -6,7 +6,7 @@
 //  Copyright © 2019 朱慕之. All rights reserved.
 //
 
-#import "CGNewsViewController.h"
+#import "GTNewsViewController.h"
 #import "GTNormalTableViewCell.h"
 
 #import "TestController.h"
@@ -15,14 +15,14 @@
 #import "GTDetailViewController.h"
 
 
-@interface CGNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface GTNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation CGNewsViewController
+@implementation GTNewsViewController
 
 #pragma mark - LifeCycle
 
