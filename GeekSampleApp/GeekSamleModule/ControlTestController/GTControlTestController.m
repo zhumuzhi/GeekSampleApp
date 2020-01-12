@@ -21,6 +21,7 @@
     
     UITextView * textView = [[UITextView alloc]initWithFrame:CGRectMake(0, 100, 20, 20)];
     [self.view addSubview:textView];
+    
     textView.text = @"asdasdasdasdasdasdasda\nasasdasdasdasdasdasdasda\nasasdasdasdasdasdasdasda\nasasdasdasdasdasdasdasda\nasasdasdasdasdasdasdasda\nasasdasdasdasdasdasdasda\nasasdasdasdasdasdasdasda\nas";
 
 //    textView.text = @"asdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasdaasdasdasdasdasdasdasda";
