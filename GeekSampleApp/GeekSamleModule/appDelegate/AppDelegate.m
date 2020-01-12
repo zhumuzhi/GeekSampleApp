@@ -10,7 +10,10 @@
 
 #import "GTSplashView.h"
 #import "GTNewsViewController.h"
+#import "GTMineController.h"
+
 #import "GTControlTestController.h"
+
 
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
@@ -24,6 +27,8 @@
     // Override point for customization after application launch.
     
     [self setRootController];
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 10;
     
     return YES;
 }
@@ -52,7 +57,7 @@
     controller3.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
     controller3.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
     
-    UIViewController *controller4 = [[UIViewController alloc] init];
+    GTMineController *controller4 = [[GTMineController alloc] init];
     controller4.view.backgroundColor = [UIColor blueColor];
     controller4.navigationItem.title = @"我的";
     controller4.tabBarItem.title = @"我的";

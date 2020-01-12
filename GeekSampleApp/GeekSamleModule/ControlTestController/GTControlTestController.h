@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+/**
+ * 控件功能测试控制器
+ */
 @interface GTControlTestController : UIViewController
 
 @end

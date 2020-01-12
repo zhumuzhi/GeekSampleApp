@@ -13,6 +13,8 @@
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
 		3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD927234F13BE00377779 /* GDWindowViewController.m */; };
 		3E746C3A23C9956B007E276D /* GTControlTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C3923C9956B007E276D /* GTControlTestController.m */; };
+		3E746C5723CB212F007E276D /* ICONNEWYEAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E746C5623CB212F007E276D /* ICONNEWYEAR.png */; };
+		3E746C5C23CB2273007E276D /* GTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C5B23CB2273007E276D /* GTMineController.m */; };
 		3E9A75BD23B7A56B00C26C98 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */; };
 		5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514423330D8C00C76C4D /* AppDelegate.m */; };
 		5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514C23330D8E00C76C4D /* Assets.xcassets */; };
@@ -41,6 +43,9 @@
 		3E4BD927234F13BE00377779 /* GDWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWindowViewController.m; sourceTree = "<group>"; };
 		3E746C3823C9956B007E276D /* GTControlTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTControlTestController.h; sourceTree = "<group>"; };
 		3E746C3923C9956B007E276D /* GTControlTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTControlTestController.m; sourceTree = "<group>"; };
+		3E746C5623CB212F007E276D /* ICONNEWYEAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONNEWYEAR.png; sourceTree = "<group>"; };
+		3E746C5A23CB2273007E276D /* GTMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMineController.h; sourceTree = "<group>"; };
+		3E746C5B23CB2273007E276D /* GTMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMineController.m; sourceTree = "<group>"; };
 		3E9A75BB23B7A56B00C26C98 /* GTSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSplashView.h; sourceTree = "<group>"; };
 		3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSplashView.m; sourceTree = "<group>"; };
 		5DF8514023330D8C00C76C4D /* GeekSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,18 +108,19 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		3E746C2D23C97D8C007E276D /* appdelegate */ = {
+		3E746C2D23C97D8C007E276D /* appDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				5DF8514323330D8C00C76C4D /* AppDelegate.h */,
 				5DF8514423330D8C00C76C4D /* AppDelegate.m */,
 			);
-			path = appdelegate;
+			path = appDelegate;
 			sourceTree = "<group>";
 		};
 		3E746C2E23C97D9E007E276D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3E746C5523CB20F0007E276D /* AlternateIcons */,
 				5DF8515B233317D900C76C4D /* icon.bundle */,
 			);
 			path = Source;
@@ -140,10 +146,11 @@
 		3E746C3123C98E7F007E276D /* GeekSamleModule */ = {
 			isa = PBXGroup;
 			children = (
-				3E746C2D23C97D8C007E276D /* appdelegate */,
+				3E746C2D23C97D8C007E276D /* appDelegate */,
 				5DF8516A23335C9700C76C4D /* TestController */,
 				3E746C3723C994FC007E276D /* ControlTestController */,
 				5DF8515D23331E3500C76C4D /* NewsController */,
+				3E746C5823CB2246007E276D /* MineController */,
 			);
 			path = GeekSamleModule;
 			sourceTree = "<group>";
@@ -173,6 +180,31 @@
 				3E746C3923C9956B007E276D /* GTControlTestController.m */,
 			);
 			path = ControlTestController;
+			sourceTree = "<group>";
+		};
+		3E746C5523CB20F0007E276D /* AlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C5623CB212F007E276D /* ICONNEWYEAR.png */,
+			);
+			path = AlternateIcons;
+			sourceTree = "<group>";
+		};
+		3E746C5823CB2246007E276D /* MineController */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C5923CB2257007E276D /* Controller */,
+			);
+			path = MineController;
+			sourceTree = "<group>";
+		};
+		3E746C5923CB2257007E276D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E746C5A23CB2273007E276D /* GTMineController.h */,
+				3E746C5B23CB2273007E276D /* GTMineController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5DF8513723330D8C00C76C4D = {
@@ -325,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF85171233363BC00C76C4D /* testStoryboard.storyboard in Resources */,
+				3E746C5723CB212F007E276D /* ICONNEWYEAR.png in Resources */,
 				5DF8515C233317D900C76C4D /* icon.bundle in Resources */,
 				5DF8515023330D8E00C76C4D /* LaunchScreen.storyboard in Resources */,
 				5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */,
@@ -340,6 +373,7 @@
 			files = (
 				5DF85175233368CF00C76C4D /* Meal.m in Sources */,
 				3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */,
+				3E746C5C23CB2273007E276D /* GTMineController.m in Sources */,
 				5DF8516923331F9100C76C4D /* GTScreen.m in Sources */,
 				3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */,
 				3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */,
