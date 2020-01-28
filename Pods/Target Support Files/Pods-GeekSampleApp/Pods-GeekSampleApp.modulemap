@@ -1,0 +1,6 @@
+framework module Pods_GeekSampleApp {
+  umbrella header "Pods-GeekSampleApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

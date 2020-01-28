@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E1B1DB523672F4100FA5427 /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */; };
+		3E29E82823DF233600BD456D /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29E82723DF233600BD456D /* GTListLoader.m */; };
 		3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD924234F13BE00377779 /* GDPerformanceView.m */; };
 		3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */; };
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
@@ -27,11 +28,16 @@
 		5DF8516E23335CBE00C76C4D /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8516D23335CBE00C76C4D /* TestController.m */; };
 		5DF85171233363BC00C76C4D /* testStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8516F23335FBE00C76C4D /* testStoryboard.storyboard */; };
 		5DF85175233368CF00C76C4D /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF85174233368CF00C76C4D /* Meal.m */; };
+		F6F02544B42CBDB20092AA64 /* Pods_GeekSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFDD54E7A2E9029D0059757 /* Pods_GeekSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06B09746E715DA8FFECFFEA9 /* Pods-GeekSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0FFDD54E7A2E9029D0059757 /* Pods_GeekSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1B1DB323672F4100FA5427 /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
 		3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
+		3E29E82623DF233600BD456D /* GTListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListLoader.h; sourceTree = "<group>"; };
+		3E29E82723DF233600BD456D /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
 		3E4BD91F234F13BE00377779 /* GDPerformanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceView.h; sourceTree = "<group>"; };
 		3E4BD920234F13BE00377779 /* GDMarginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMarginLabel.h; sourceTree = "<group>"; };
 		3E4BD921234F13BE00377779 /* GDPerformanceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceMonitor.h; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 		5DF8516F23335FBE00C76C4D /* testStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = testStoryboard.storyboard; sourceTree = "<group>"; };
 		5DF85173233368CF00C76C4D /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
 		5DF85174233368CF00C76C4D /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		9D63A4B61C6215817E9785C3 /* Pods-GeekSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekSampleApp.release.xcconfig"; path = "Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +81,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F02544B42CBDB20092AA64 /* Pods_GeekSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E29E82523DF22DF00BD456D /* GTLoder */ = {
+			isa = PBXGroup;
+			children = (
+				3E29E82623DF233600BD456D /* GTListLoader.h */,
+				3E29E82723DF233600BD456D /* GTListLoader.m */,
+			);
+			path = GTLoder;
+			sourceTree = "<group>";
+		};
 		3E4BD91E234F13BE00377779 /* GDPerformanceMonitor(状态栏fps) */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +229,8 @@
 			children = (
 				5DF8514223330D8C00C76C4D /* GeekSampleApp */,
 				5DF8514123330D8C00C76C4D /* Products */,
+				E32B8469C285D3576455B2B2 /* Pods */,
+				FEB576F8A44F554AA5D75588 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +284,7 @@
 		5DF8516623331F5C00C76C4D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3E29E82523DF22DF00BD456D /* GTLoder */,
 				3E746C3323C98EF6007E276D /* GTScreen */,
 				3E4BD91E234F13BE00377779 /* GDPerformanceMonitor(状态栏fps) */,
 			);
@@ -299,6 +319,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E32B8469C285D3576455B2B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06B09746E715DA8FFECFFEA9 /* Pods-GeekSampleApp.debug.xcconfig */,
+				9D63A4B61C6215817E9785C3 /* Pods-GeekSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEB576F8A44F554AA5D75588 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FFDD54E7A2E9029D0059757 /* Pods_GeekSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,9 +344,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DF8515623330D8F00C76C4D /* Build configuration list for PBXNativeTarget "GeekSampleApp" */;
 			buildPhases = (
+				24C27912E7B6614A4F4F7286 /* [CP] Check Pods Manifest.lock */,
 				5DF8513C23330D8C00C76C4D /* Sources */,
 				5DF8513D23330D8C00C76C4D /* Frameworks */,
 				5DF8513E23330D8C00C76C4D /* Resources */,
+				E61BFA352B6F63770F9E8D7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,6 +406,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24C27912E7B6614A4F4F7286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeekSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61BFA352B6F63770F9E8D7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5DF8513C23330D8C00C76C4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -378,6 +460,7 @@
 				3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */,
 				3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */,
 				5DF8516E23335CBE00C76C4D /* TestController.m in Sources */,
+				3E29E82823DF233600BD456D /* GTListLoader.m in Sources */,
 				5DF8515323330D8E00C76C4D /* main.m in Sources */,
 				3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */,
 				5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */,
@@ -517,6 +600,7 @@
 		};
 		5DF8515723330D8F00C76C4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B09746E715DA8FFECFFEA9 /* Pods-GeekSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +618,7 @@
 		};
 		5DF8515823330D8F00C76C4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D63A4B61C6215817E9785C3 /* Pods-GeekSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -14,11 +14,15 @@
 #import "GDPerformanceMonitor.h"
 #import "GTDetailViewController.h"
 
+#import "GTListLoader.h"
 
 @interface GTNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArray;
+
+@property (nonatomic, strong) GTListLoader *listLoader;
+
 
 @end
 
@@ -54,6 +58,8 @@
         [textLabel.layer setBorderColor:[[UIColor blackColor] CGColor]];
     }];
     
+    self.listLoader = [[GTListLoader alloc] init];
+    [self.listLoader loadListData];
 }
 
 #pragma mark - UITableViewDataSource
