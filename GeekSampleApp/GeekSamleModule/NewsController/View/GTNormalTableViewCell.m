@@ -8,6 +8,7 @@
 
 #import "GTNormalTableViewCell.h"
 #import "GTScreen.h"
+#import "GTListItem.h"
 
 @interface GTNormalTableViewCell ()
 
@@ -93,6 +94,25 @@
     
     
 }
+
+- (void)layoutTableViewCellWithItem:(GTListItem *)item {
+    
+    self.titleLabel.text = item.title;
+    
+    self.sourceLabel.text = item.authorName;
+    [self.sourceLabel sizeToFit];
+    
+    self.commentLabel.text = item.category;
+    [self.commentLabel sizeToFit];
+    
+    self.timeLabel.text = item.date;
+    [self.timeLabel sizeToFit];
+    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.picUrl]]];
+    self.rightImageView.image = image;
+    
+}
+
 
 - (void)deleteButtonClick {
     NSLog(@"点击删除按钮");

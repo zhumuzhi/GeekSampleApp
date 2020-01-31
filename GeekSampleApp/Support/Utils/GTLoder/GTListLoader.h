@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GTListItem.h"
+//@class GTListItem;
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^GTListLoaderFinishBlock)(BOOL success, NSArray<GTListItem *> *dataArray);
 
 /**
  * 列表请求
@@ -18,7 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 请求列表数据
  */
-- (void)loadListData;
+- (void)loadListDataWithFinishBlock:(GTListLoaderFinishBlock)finishBlock;
+
+
+
+
 
 @end
 

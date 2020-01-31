@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		3E4BD929234F13BE00377779 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */; };
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
 		3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD927234F13BE00377779 /* GDWindowViewController.m */; };
+		3E56752023E4051200F8025C /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E56751F23E4051200F8025C /* GTListItem.m */; };
 		3E746C3A23C9956B007E276D /* GTControlTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C3923C9956B007E276D /* GTControlTestController.m */; };
 		3E746C5723CB212F007E276D /* ICONNEWYEAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E746C5623CB212F007E276D /* ICONNEWYEAR.png */; };
 		3E746C5C23CB2273007E276D /* GTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C5B23CB2273007E276D /* GTMineController.m */; };
@@ -47,6 +48,8 @@
 		3E4BD925234F13BE00377779 /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceMonitor.m; sourceTree = "<group>"; };
 		3E4BD926234F13BE00377779 /* GDMarginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMarginLabel.m; sourceTree = "<group>"; };
 		3E4BD927234F13BE00377779 /* GDWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWindowViewController.m; sourceTree = "<group>"; };
+		3E56751E23E4051200F8025C /* GTListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
+		3E56751F23E4051200F8025C /* GTListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
 		3E746C3823C9956B007E276D /* GTControlTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTControlTestController.h; sourceTree = "<group>"; };
 		3E746C3923C9956B007E276D /* GTControlTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTControlTestController.m; sourceTree = "<group>"; };
 		3E746C5623CB212F007E276D /* ICONNEWYEAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONNEWYEAR.png; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 				3E4BD927234F13BE00377779 /* GDWindowViewController.m */,
 			);
 			path = "GDPerformanceMonitor(状态栏fps)";
+			sourceTree = "<group>";
+		};
+		3E56751D23E4050500F8025C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E56751E23E4051200F8025C /* GTListItem.h */,
+				3E56751F23E4051200F8025C /* GTListItem.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3E746C2C23C97D40007E276D /* Other */ = {
@@ -255,6 +267,7 @@
 		5DF8515D23331E3500C76C4D /* NewsController */ = {
 			isa = PBXGroup;
 			children = (
+				3E56751D23E4050500F8025C /* Model */,
 				5DF8515F23331E5100C76C4D /* Controller */,
 				5DF8515E23331E4F00C76C4D /* View */,
 			);
@@ -325,7 +338,6 @@
 				06B09746E715DA8FFECFFEA9 /* Pods-GeekSampleApp.debug.xcconfig */,
 				9D63A4B61C6215817E9785C3 /* Pods-GeekSampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -457,6 +469,7 @@
 				3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */,
 				3E746C5C23CB2273007E276D /* GTMineController.m in Sources */,
 				5DF8516923331F9100C76C4D /* GTScreen.m in Sources */,
+				3E56752023E4051200F8025C /* GTListItem.m in Sources */,
 				3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */,
 				3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */,
 				5DF8516E23335CBE00C76C4D /* TestController.m in Sources */,

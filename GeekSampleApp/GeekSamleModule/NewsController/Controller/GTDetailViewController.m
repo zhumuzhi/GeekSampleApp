@@ -13,9 +13,22 @@
 
 @property (nonatomic, strong) WKWebView *webView;
 
+@property (nonatomic, copy) NSString *articleUrl;
+
 @end
 
 @implementation GTDetailViewController
+
+
+- (instancetype)initWithUrlString:(NSString *)urlSting {
+    
+    self = [super init];
+    if (self) {
+        self.articleUrl = urlSting;
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +41,10 @@
         self.webView;
     })];
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://time.geekbang.org"]]];
+    if (!self.articleUrl) {
+        self.articleUrl = @"https://time.geekbang.org";
+    }
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.articleUrl]]];
 }
 
 

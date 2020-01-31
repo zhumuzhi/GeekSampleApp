@@ -15,6 +15,7 @@
 #import "GTDetailViewController.h"
 
 #import "GTListLoader.h"
+#import "GTListItem.h"
 
 @interface GTNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -59,12 +60,18 @@
     }];
     
     self.listLoader = [[GTListLoader alloc] init];
-    [self.listLoader loadListData];
+    
+    __weak typeof(self)weakSelf = self;
+    [self.listLoader loadListDataWithFinishBlock:^(BOOL success, NSArray<GTListItem *> * _Nonnull dataArray) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.dataArray = dataArray;
+        [strongSelf.tableView reloadData];
+    }];
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,6 +81,9 @@
         cell = [[GTNormalTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identify];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
+    GTListItem *item = [self.dataArray objectAtIndex:indexPath.row];
+    [cell layoutTableViewCellWithItem:item];
+    
     return cell;
 }
 
@@ -83,7 +93,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    GTDetailViewController *newsDetail = [[GTDetailViewController alloc] init];
+    GTListItem *item = [self.dataArray objectAtIndex:indexPath.row];
+    
+    GTDetailViewController *newsDetail = [[GTDetailViewController alloc] initWithUrlString:item.articleUrl];
     newsDetail.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:newsDetail animated:YES];
     
