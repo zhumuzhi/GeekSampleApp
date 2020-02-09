@@ -109,6 +109,14 @@
     
     id unarchiveObj = [NSKeyedUnarchiver unarchivedObjectOfClasses:[NSSet setWithObjects:[NSArray class], [GTListItem class], nil] fromData:readListData error:nil];
     
+    [[NSUserDefaults standardUserDefaults] setObject:@"abc" forKey:@"test"];
+    NSString *test = [[NSUserDefaults standardUserDefaults] stringForKey:@"test"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:listData forKey:@"listData"];
+    NSData *testData = [[NSUserDefaults standardUserDefaults] dataForKey:@"listData"];
+    
+    
+    
     NSLog(@"%@", unarchiveObj);
     
 }
