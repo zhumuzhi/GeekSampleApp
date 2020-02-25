@@ -10,6 +10,8 @@
 #import "GTScreen.h"
 #import "GTListItem.h"
 
+#import "SDWebImage.h"
+
 @interface GTNormalTableViewCell ()
 
 @property (nonatomic, strong, readwrite) UILabel *titleLabel;
@@ -107,9 +109,13 @@
     
     self.timeLabel.text = item.date;
     [self.timeLabel sizeToFit];
+//
+//    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.picUrl]]];
+//    self.rightImageView.image = image;
     
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.picUrl]]];
-    self.rightImageView.image = image;
+    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.picUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        
+    }];
     
 }
 
