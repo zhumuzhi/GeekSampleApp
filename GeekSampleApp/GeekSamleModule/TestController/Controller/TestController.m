@@ -8,6 +8,11 @@
 
 #import "TestController.h"
 
+#import "GTStatic.h"
+#import "GTStaticTest.h"
+
+#import <GTFramework/GTFrameWorkTest.h>
+
 @interface TestController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *mealNameLabel;

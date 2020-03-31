@@ -52,6 +52,7 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
     
+    
     [[GDPerformanceMonitor sharedInstance] startMonitoring];
     [[GDPerformanceMonitor sharedInstance] configureWithConfiguration:^(UILabel *textLabel) {
         [textLabel setBackgroundColor:[UIColor blackColor]];
