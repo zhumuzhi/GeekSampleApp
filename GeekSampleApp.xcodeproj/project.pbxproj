@@ -14,15 +14,9 @@
 		3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD926234F13BE00377779 /* GDMarginLabel.m */; };
 		3E4BD92B234F13BE00377779 /* GDWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD927234F13BE00377779 /* GDWindowViewController.m */; };
 		3E56752023E4051200F8025C /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E56751F23E4051200F8025C /* GTListItem.m */; };
-		3E6BDF902432D275004A2FD2 /* libGTStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDF8D2432D275004A2FD2 /* libGTStatic.a */; };
 		3E746C3A23C9956B007E276D /* GTControlTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C3923C9956B007E276D /* GTControlTestController.m */; };
 		3E746C5723CB212F007E276D /* ICONNEWYEAR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E746C5623CB212F007E276D /* ICONNEWYEAR.png */; };
 		3E746C5C23CB2273007E276D /* GTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E746C5B23CB2273007E276D /* GTMineController.m */; };
-		3E7B2D432432A56E00823641 /* GTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7B2D412432A52100823641 /* GTFramework.framework */; };
-		3E7B2D442432A56E00823641 /* GTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7B2D412432A52100823641 /* GTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3E977AD2243F5DE00093AE6B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E977AD1243F5DE00093AE6B /* NotificationCenter.framework */; };
-		3E977AD6243F5DE00093AE6B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E977AD5243F5DE00093AE6B /* TodayViewController.m */; };
-		3E977ADD243F5DE00093AE6B /* GTToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3E977AD0243F5DE00093AE6B /* GTToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3E9A75BD23B7A56B00C26C98 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A75BC23B7A56B00C26C98 /* GTSplashView.m */; };
 		5DF8514523330D8C00C76C4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8514423330D8C00C76C4D /* AppDelegate.m */; };
 		5DF8514D23330D8E00C76C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8514C23330D8E00C76C4D /* Assets.xcassets */; };
@@ -35,43 +29,7 @@
 		5DF8516E23335CBE00C76C4D /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8516D23335CBE00C76C4D /* TestController.m */; };
 		5DF85171233363BC00C76C4D /* testStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8516F23335FBE00C76C4D /* testStoryboard.storyboard */; };
 		5DF85175233368CF00C76C4D /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF85174233368CF00C76C4D /* Meal.m */; };
-		F6F02544B42CBDB20092AA64 /* Pods_GeekSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFDD54E7A2E9029D0059757 /* Pods_GeekSampleApp.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3E977ADB243F5DE00093AE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5DF8513823330D8C00C76C4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E977ACF243F5DE00093AE6B;
-			remoteInfo = GTToday;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3E7B2D452432A56E00823641 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3E7B2D442432A56E00823641 /* GTFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E977ADE243F5DE00093AE6B /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				3E977ADD243F5DE00093AE6B /* GTToday.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06B09746E715DA8FFECFFEA9 /* Pods-GeekSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +60,6 @@
 		3E746C5A23CB2273007E276D /* GTMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMineController.h; sourceTree = "<group>"; };
 		3E746C5B23CB2273007E276D /* GTMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMineController.m; sourceTree = "<group>"; };
 		3E7B2D412432A52100823641 /* GTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTFramework.framework; sourceTree = "<group>"; };
-		3E977AD0243F5DE00093AE6B /* GTToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GTToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E977AD1243F5DE00093AE6B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		3E977AD4243F5DE00093AE6B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		3E977AD5243F5DE00093AE6B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
@@ -132,21 +89,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3E977ACD243F5DE00093AE6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E977AD2243F5DE00093AE6B /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5DF8513D23330D8C00C76C4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7B2D432432A56E00823641 /* GTFramework.framework in Frameworks */,
-				3E6BDF902432D275004A2FD2 /* libGTStatic.a in Frameworks */,
-				F6F02544B42CBDB20092AA64 /* Pods_GeekSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				5DF8514023330D8C00C76C4D /* GeekSampleApp.app */,
-				3E977AD0243F5DE00093AE6B /* GTToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -441,23 +386,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E977ACF243F5DE00093AE6B /* GTToday */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E977AE1243F5DE00093AE6B /* Build configuration list for PBXNativeTarget "GTToday" */;
-			buildPhases = (
-				3E977ACC243F5DE00093AE6B /* Sources */,
-				3E977ACD243F5DE00093AE6B /* Frameworks */,
-				3E977ACE243F5DE00093AE6B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GTToday;
-			productName = GTToday;
-			productReference = 3E977AD0243F5DE00093AE6B /* GTToday.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		5DF8513F23330D8C00C76C4D /* GeekSampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DF8515623330D8F00C76C4D /* Build configuration list for PBXNativeTarget "GeekSampleApp" */;
@@ -467,13 +395,10 @@
 				5DF8513D23330D8C00C76C4D /* Frameworks */,
 				5DF8513E23330D8C00C76C4D /* Resources */,
 				E61BFA352B6F63770F9E8D7E /* [CP] Embed Pods Frameworks */,
-				3E7B2D452432A56E00823641 /* Embed Frameworks */,
-				3E977ADE243F5DE00093AE6B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3E977ADC243F5DE00093AE6B /* PBXTargetDependency */,
 			);
 			name = GeekSampleApp;
 			productName = GeekSampleApp;
@@ -489,9 +414,6 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "朱慕之";
 				TargetAttributes = {
-					3E977ACF243F5DE00093AE6B = {
-						CreatedOnToolsVersion = 11.4;
-					};
 					5DF8513F23330D8C00C76C4D = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -511,19 +433,11 @@
 			projectRoot = "";
 			targets = (
 				5DF8513F23330D8C00C76C4D /* GeekSampleApp */,
-				3E977ACF243F5DE00093AE6B /* GTToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E977ACE243F5DE00093AE6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5DF8513E23330D8C00C76C4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,14 +495,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3E977ACC243F5DE00093AE6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E977AD6243F5DE00093AE6B /* TodayViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5DF8513C23330D8C00C76C4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,14 +521,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3E977ADC243F5DE00093AE6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E977ACF243F5DE00093AE6B /* GTToday */;
-			targetProxy = 3E977ADB243F5DE00093AE6B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		5DF8514E23330D8E00C76C4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -635,46 +533,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3E977ADF243F5DE00093AE6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = GTToday/GTToday.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GFW576JD52;
-				INFOPLIST_FILE = GTToday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhumuzhi.GeekSampleApp.GTToday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3E977AE0243F5DE00093AE6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = GTToday/GTToday.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GFW576JD52;
-				INFOPLIST_FILE = GTToday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhumuzhi.GeekSampleApp.GTToday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		5DF8515423330D8E00C76C4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -808,7 +666,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GeekSampleApp/GeekSamleModule/GTFramework",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhumuzhi.GeekSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhumuzhi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -835,7 +693,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GeekSampleApp/GeekSamleModule/GTFramework",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhumuzhi.GeekSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhumuzhi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -844,15 +702,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E977AE1243F5DE00093AE6B /* Build configuration list for PBXNativeTarget "GTToday" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E977ADF243F5DE00093AE6B /* Debug */,
-				3E977AE0243F5DE00093AE6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5DF8513B23330D8C00C76C4D /* Build configuration list for PBXProject "GeekSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
