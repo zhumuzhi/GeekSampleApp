@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0EFB1524EFC03300E77CE6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EFB1424EFC03300E77CE6 /* Person.m */; };
 		3E1B1DB523672F4100FA5427 /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */; };
 		3E29E82823DF233600BD456D /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29E82723DF233600BD456D /* GTListLoader.m */; };
 		3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BD924234F13BE00377779 /* GDPerformanceView.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		06B09746E715DA8FFECFFEA9 /* Pods-GeekSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-GeekSampleApp/Pods-GeekSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		0FFDD54E7A2E9029D0059757 /* Pods_GeekSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0EFB1324EFC03300E77CE6 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3E0EFB1424EFC03300E77CE6 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3E1B1DB323672F4100FA5427 /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
 		3E1B1DB423672F4100FA5427 /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		3E29E82623DF233600BD456D /* GTListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListLoader.h; sourceTree = "<group>"; };
@@ -99,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E0EFB1224EFC01400E77CE6 /* Moodel */ = {
+			isa = PBXGroup;
+			children = (
+				3E0EFB1324EFC03300E77CE6 /* Person.h */,
+				3E0EFB1424EFC03300E77CE6 /* Person.m */,
+			);
+			path = Moodel;
+			sourceTree = "<group>";
+		};
 		3E29E82523DF22DF00BD456D /* GTLoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 		3E746C2F23C98E52007E276D /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				3E0EFB1224EFC01400E77CE6 /* Moodel */,
 				3E746C3023C98E67007E276D /* component */,
 				5DF8516623331F5C00C76C4D /* Utils */,
 			);
@@ -505,6 +518,7 @@
 				5DF8516923331F9100C76C4D /* GTScreen.m in Sources */,
 				3E56752023E4051200F8025C /* GTListItem.m in Sources */,
 				3E4BD928234F13BE00377779 /* GDPerformanceView.m in Sources */,
+				3E0EFB1524EFC03300E77CE6 /* Person.m in Sources */,
 				3E4BD92A234F13BE00377779 /* GDMarginLabel.m in Sources */,
 				5DF8516E23335CBE00C76C4D /* TestController.m in Sources */,
 				3E29E82823DF233600BD456D /* GTListLoader.m in Sources */,

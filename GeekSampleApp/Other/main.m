@@ -8,12 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Person.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-//        NSDictionary *dict  = @{@"key1":@"1", @"key2":@"2", @"key3":@"3", @"key4":@"4"};
-        
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        for (NSInteger i = 0; i<5; i++) {
+            Person *p = [[Person  alloc]  init];
+            p.name = [NSString stringWithFormat:@"name%@", @(i)];
+            p.age  = i;
+            NSString *key = [NSString stringWithFormat:@"key%@", @(i)];
+            [dict setValue:p forKey:key];
+        }
+        NSLog(@"%@", dict);
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
